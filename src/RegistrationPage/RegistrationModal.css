@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.registration-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(21, 14, 40, 0.9);
+}
+
+.modal {
+  width: 80%;
+  height: 440px;
+  padding: 30px;
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgba(212, 52, 254, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal img {
+  width: 80%;
+  height: 40%;
+}
+
+.modal h3 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.modal p {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.modal span {
+  display: block;
+  text-align: center;
+}
+
+.go-back {
+  width: 90%;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(0deg, #d434fe, #d434fe),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01));
+  border: 1px solid rgba(212, 52, 254, 1);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 720px) {
+  .registration-modal {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0 10%;
+    background-color: rgba(21, 14, 40, 0.93);
+  }
+
+  .modal {
+    width: 60%;
+    height: 80%;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    border: 1px solid rgba(212, 52, 254, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .modal img {
+    width: 60%;
+    height: 50%;
+  }
+
+  .modal h3 {
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+  }
+  .modal p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .modal span {
+    display: block;
+  }
+
+  .go-back {
+    width: 90%;
+    height: 53px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: linear-gradient(0deg, #d434fe, #d434fe),
+      linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 0.01),
+        rgba(255, 255, 255, 0.01)
+      );
+    border: 1px solid rgba(212, 52, 254, 1);
+    cursor: pointer;
+  }
+}
